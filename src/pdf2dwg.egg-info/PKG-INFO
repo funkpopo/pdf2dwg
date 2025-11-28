@@ -1,0 +1,116 @@
+Metadata-Version: 2.4
+Name: pdf2dwg
+Version: 1.2.0
+Summary: Convert PDF files to DXF format for AutoCAD - preserving all graphics and text
+Home-page: https://github.com/funkpopo/pdf2dwg
+Author: funkpopo
+Author-email: s767609509@gmail.com
+License: MIT
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: PyMuPDF>=1.23.0
+Requires-Dist: ezdxf>=1.1.0
+Requires-Dist: click>=8.1.0
+Requires-Dist: tqdm>=4.65.0
+Requires-Dist: numpy>=1.24.0
+Requires-Dist: Pillow>=9.0.0
+Requires-Dist: scipy
+Provides-Extra: dev
+Requires-Dist: pytest>=7.0.0; extra == "dev"
+Requires-Dist: pytest-cov>=4.0.0; extra == "dev"
+Provides-Extra: scipy
+Requires-Dist: scipy>=1.10.0; extra == "scipy"
+Dynamic: author
+Dynamic: author-email
+Dynamic: home-page
+Dynamic: license-file
+Dynamic: requires-python
+
+# PDF to DWG Converter
+
+Convert PDF files to AutoCAD-compatible DWG/DXF format.
+
+## Features
+
+- Extract vector graphics from PDF (lines, polylines, curves, text)
+- Support multi-page PDF (single, separate, merge modes)
+- Auto-detect arcs and circles
+- Preserve color and line width
+
+## Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### ODA File Converter (Optional, for DWG output)
+
+Download from: https://www.opendesign.com/guestfiles/oda_file_converter
+
+> Without ODA File Converter, you can still output DXF format.
+
+## Usage
+
+### Command Line
+
+```bash
+# Basic conversion
+pdf2dwg drawing.pdf
+
+# Specify output file
+pdf2dwg drawing.pdf output.dwg
+
+# Convert to DXF format
+pdf2dwg drawing.pdf -f dxf
+
+# Set scale
+pdf2dwg drawing.pdf -s 2.0
+
+# Merge all pages
+pdf2dwg drawing.pdf -m merge
+
+# Convert specific pages (0-indexed)
+pdf2dwg drawing.pdf -p 0,2,4
+
+# Specify DWG version
+pdf2dwg drawing.pdf -v ACAD2018
+
+# Show all options
+pdf2dwg --help
+```
+
+### Python API
+
+```python
+from pdf2dwg import PDFToDWGConverter
+
+converter = PDFToDWGConverter()
+result = converter.convert("input.pdf", "output.dwg")
+
+if result.success:
+    print(f"Output: {result.output_files}")
+```
+
+## Dependencies
+
+- **PyMuPDF** - PDF parsing
+- **ezdxf** - DXF generation
+- **click** - CLI
+- **ODA File Converter** - DXF to DWG conversion (external)
+
+## License
+
+GPL License

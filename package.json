@@ -1,0 +1,20 @@
+{
+    "name": "pdf2dwg",
+    "version": "1.0.0",
+    "description": "Convert PDF files to DWG format for AutoCAD",
+    "author": "",
+    "license": "MIT",
+    "python_requires": ">=3.8",
+    "dependencies": [
+        "PyMuPDF>=1.23.0",
+        "ezdxf>=1.1.0",
+        "click>=8.1.0",
+        "tqdm>=4.65.0",
+        "numpy>=1.24.0"
+    ],
+    "entry_points": {
+        "console_scripts": [
+            "pdf2dwg=pdf2dwg.cli:main"
+        ]
+    }
+}

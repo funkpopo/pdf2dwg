@@ -1,0 +1,14 @@
+PyMuPDF>=1.23.0
+ezdxf>=1.1.0
+click>=8.1.0
+tqdm>=4.65.0
+numpy>=1.24.0
+Pillow>=9.0.0
+scipy
+
+[dev]
+pytest>=7.0.0
+pytest-cov>=4.0.0
+
+[scipy]
+scipy>=1.10.0

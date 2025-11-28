@@ -1,0 +1,16 @@
+# PDF to DWG Converter Dependencies
+
+# PDF processing - extract vector graphics
+PyMuPDF>=1.23.0
+
+# DXF file creation and manipulation
+ezdxf>=1.1.0
+
+# Command line interface
+click>=8.1.0
+
+# Progress bar for batch processing
+tqdm>=4.65.0
+
+# Geometry operations (optional, for complex path processing)
+numpy>=1.24.0
