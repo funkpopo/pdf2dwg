@@ -4,16 +4,16 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pdf2dwg"
-version = "1.2.0"
+version = "1.2.1"
 description = "Convert PDF files to DXF format for AutoCAD - preserving all graphics and text"
 readme = "README.md"
-license = {text = "GPL 3.0"}
+license = {text = "GNU General Public License v3 (GPLv3)"}
 requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: End Users/Desktop",
-    "License :: OSI Approved :: GPL 3.0 License",
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: 3.12",
     "Topic :: Multimedia :: Graphics :: Graphics Conversion",
