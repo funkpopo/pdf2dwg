@@ -5,17 +5,12 @@ Summary: Convert PDF files to DXF format for AutoCAD - preserving all graphics a
 Home-page: https://github.com/funkpopo/pdf2dwg
 Author: funkpopo
 Author-email: s767609509@gmail.com
-License: MIT
+License: GPL 3.0
 Classifier: Development Status :: 4 - Beta
 Classifier: Intended Audience :: Developers
 Classifier: Intended Audience :: End Users/Desktop
-Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: GPL 3.0 License
 Classifier: Operating System :: OS Independent
-Classifier: Programming Language :: Python :: 3
-Classifier: Programming Language :: Python :: 3.8
-Classifier: Programming Language :: Python :: 3.9
-Classifier: Programming Language :: Python :: 3.10
-Classifier: Programming Language :: Python :: 3.11
 Classifier: Programming Language :: Python :: 3.12
 Classifier: Topic :: Multimedia :: Graphics :: Graphics Conversion
 Requires-Python: >=3.8

@@ -7,19 +7,14 @@ name = "pdf2dwg"
 version = "1.2.0"
 description = "Convert PDF files to DXF format for AutoCAD - preserving all graphics and text"
 readme = "README.md"
-license = {text = "MIT"}
-requires-python = ">=3.8"
+license = {text = "GPL 3.0"}
+requires-python = ">=3.12"
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",
     "Intended Audience :: End Users/Desktop",
-    "License :: OSI Approved :: MIT License",
+    "License :: OSI Approved :: GPL 3.0 License",
     "Operating System :: OS Independent",
-    "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
-    "Programming Language :: Python :: 3.10",
-    "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
     "Topic :: Multimedia :: Graphics :: Graphics Conversion",
 ]
